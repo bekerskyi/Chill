@@ -1,5 +1,5 @@
 window.addEventListener('DOMContentLoaded',()=>{
-    const deadline = '2021-11-14';
+    const deadline = '2021-10-16';
 
     function getTimeRemaining(endtime){
         const t = Date.parse(endtime)-Date.parse(new Date()),
