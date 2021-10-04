@@ -1,0 +1,86 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+
+.container {
+    max-width: 1200px;
+    min-height: 100%;
+    margin: 0 auto;
+}
+
+.countdown {
+    min-height: 100vh;
+    width: 100%;
+    padding: 40px 0px 55px 0px;
+    background: url(../img/cupcakes.jpeg)center/cover no-repeat fixed;
+}
+
+
+.timer {
+    display: flex;
+    min-height: 50vh;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.timer__block {
+    border:10px solid skyblue;
+    border-radius: 40%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    margin: 0 25px 0 25px;
+    min-width: 200px ;
+    min-height: 200px;
+    background-color: palevioletred;
+
+}
+
+.time {
+    font-size: 50px;
+    font-family: "Gluten";
+}
+.title{
+    font-size: 50px;
+    margin-top: 50px;
+    font-family: "Lobster Two";
+    font-weight: 700;
+    text-align: center;
+    -webkit-text-stroke: 2px skyblue;
+    color: rgb(4, 14, 3);
+}
+div{
+    font-family: "Baloo 2";
+}
+
+@media screen and (max-width: 376px) {
+    .timer{
+        flex-wrap: wrap;
+    }
+    .timer__block{
+        min-width: 75px ;
+        min-height: 75px;
+        margin: 0 15px 0 15px;
+        border:5px solid skyblue;
+    }
+    .time{
+        font-size: 25px;
+        font-weight: 500;
+    }
+
+    .last{
+        min-width: 200px ;
+        min-height: 200px;
+        border:10px solid skyblue;
+    }
+    .last .time{
+        font-size: 50px;
+        font-weight: 500;
+    }
+}
